@@ -1,5 +1,7 @@
 #### Frontend ########
 Setup using NextJs
+running in port 3002
+
 
 npx react-native init TaskListApp
 cd task-list-app
@@ -17,8 +19,13 @@ change package.json to run in port 3002 avoid conflict
   },
 
 
+  cd frontend/task-list-app
+  npm run dev
+
+
 ##### Backend ########
 Setup using Ruby on Rails with posgreSQL
+running in port 3001
 
 go to config/database.yml change your local db env
 rails db:create
@@ -32,6 +39,10 @@ group :development, :test do
 end
 
 bundle install
+
+cd backend/
+
+rails server -p 3001   
 
 
 For RSpec :
